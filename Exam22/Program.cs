@@ -11,10 +11,10 @@ namespace Exam22
             string subjectName = Console.ReadLine();
             Subject subject = new Subject(1, subjectName);
 
-            Console.Write("Enter exam type (1 = Final, 2 = Practical): ");
+            Console.Write("Enter exam  Final = 1,  Practical = 2 ");
             int examType = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter exam time (in minutes): ");
+            Console.Write("Enter exam time minutes ");
             int time = int.Parse(Console.ReadLine());
 
             Console.Write("Enter number of questions: ");
@@ -28,7 +28,7 @@ namespace Exam22
             {
                 Console.WriteLine($"\nEnter info for Question {i + 1}");
 
-                Console.Write("Enter question type (1 = MCQ, 2 = True/False): ");
+                Console.Write("Enter question type  MCQ =1, TFalse =2: ");
                 int qType = int.Parse(Console.ReadLine());
 
                 Console.Write("Header: ");
