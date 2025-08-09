@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exam22
+{
+    public abstract class Exam
+    {
+        public int Time { get; set; }
+        public int NumOfQ { get; set; }
+        public List<Question> Questions { get; set; } = new List<Question>();
+        public Exam(int time, int numofq)
+        {
+            NumOfQ = numofq;
+            Time = time;
+        }
+
+
+        public abstract void ShowExam();
+
+
+    }
+
+}
